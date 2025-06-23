@@ -29,3 +29,13 @@ POST {{baseUrl}}/questions
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
+{
+  "title": "Qual é o seu",
+  "content": "Qual é o seu nome?"
+}
+
+###
+# @name fetch_recent_questions
+GET {{baseUrl}}/questions?page=2
+Content-Type: application/json
+Authorization: Bearer {{token}}
